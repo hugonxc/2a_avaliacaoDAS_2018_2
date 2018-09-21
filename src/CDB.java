@@ -61,7 +61,12 @@ public class CDB {
     }
 
     public Double calculaImpostoDeRenda(){
-        return 3.14;
+        Double rendimentoBruto = this.calculaRendimentoBruto();
+        Double ir = this.getIr();
+
+        Double imposto_de_renda = (ir*rendimentoBruto)/100;
+
+        return imposto_de_renda;
     }
 
 
