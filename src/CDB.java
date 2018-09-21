@@ -1,6 +1,6 @@
 public class CDB {
 
-    private Integer dias;
+    private Double dias;
     private Double aplicacao_inicial;
     private Double juros_anual;
     private Double ir;
@@ -8,18 +8,18 @@ public class CDB {
     public CDB() {
     }
 
-    public CDB(Integer dias, Double aplicacao_inicial, Double juros_anual, Double ir) {
+    public CDB(Double dias, Double aplicacao_inicial, Double juros_anual, Double ir) {
         this.dias = dias;
         this.aplicacao_inicial = aplicacao_inicial;
         this.juros_anual = juros_anual;
         this.ir = ir;
     }
 
-    public Integer getDias() {
+    public Double getDias() {
         return dias;
     }
 
-    public void setDias(Integer dias) {
+    public void setDias(Double dias) {
         this.dias = dias;
     }
 
@@ -49,6 +49,14 @@ public class CDB {
 
 
     public Double calculaRendimentoBruto(){
-        return 13.97;
+        Double dias = this.getDias();
+        Double aplicacao_inicial = this.getAplicacao_inicial();
+        Double taxa_anual = this.getJuros_anual();
+
+        Double tempo = dias/365;
+
+        Double rendimento_bruto = (tempo * aplicacao_inicial * taxa_anual)/ 100;
+
+        return rendimento_bruto;
     }
 }
