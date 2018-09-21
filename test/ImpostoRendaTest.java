@@ -34,7 +34,7 @@ public class ImpostoRendaTest {
 
 
     @Test()
-    public void testCalculaRendimentoBruto() {
+    public void testCalculaImpostoDeRenda() {
         CDB cdb = new CDB(dias, aplicacao_inicial, juros_anual,ir);
         Double ir = cdb.calculaImpostoDeRenda();
 
