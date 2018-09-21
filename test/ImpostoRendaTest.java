@@ -11,4 +11,13 @@ public class ImpostoRendaTest {
 
         Assert.assertEquals(3.14, ir, 0.01);
     }
+    @Test()
+    public void test2() {
+        CDB cdb = new CDB(120.0, 500.0, 8.0,22.5);
+
+        Double ir = cdb.calculaImpostoDeRenda();
+
+        Assert.assertEquals(2.96, ir, 0.01);
+    }
+
 }
