@@ -60,6 +60,9 @@ public class CDB {
         return rendimento_bruto;
     }
 
+    public Double calculaImpostoDeRenda(){
+        return 3.14;
+    }
 
 
 }

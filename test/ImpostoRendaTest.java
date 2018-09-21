@@ -1,5 +1,5 @@
+import org.junit.Assert;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
 
 public class ImpostoRendaTest {
@@ -9,6 +9,6 @@ public class ImpostoRendaTest {
 
         Double ir = cdb.calculaImpostoDeRenda();
 
-        assertEquals(3,14, ir, 0.01);
+        Assert.assertEquals(3.14, ir, 0.01);
     }
 }
