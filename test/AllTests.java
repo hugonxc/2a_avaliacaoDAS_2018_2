@@ -5,7 +5,8 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
         RendimentoBrutoTest.class,
-        ImpostoRendaTest.class
+        ImpostoRendaTest.class,
+        RendimentoLiquidoTest.class
 })
 
 public class AllTests {

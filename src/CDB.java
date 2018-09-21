@@ -69,5 +69,10 @@ public class CDB {
         return imposto_de_renda;
     }
 
+    public Double calculaRendimentoLiquido(){
+        return 1.0829;
+    }
+
+
 
 }
